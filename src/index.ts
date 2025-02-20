@@ -6,7 +6,6 @@ export const plugin: Plugin = {
   infos,
   subscribedHooks: process.env.DEBUG__HOOKS === 'true'
     ? {
-        checkServices: { steps: { pre: commonCall } },
         deleteCluster: { steps: { pre: commonCall } },
         deleteProject: { steps: { pre: commonCall } },
         deleteZone: { steps: { pre: commonCall } },
